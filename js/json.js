@@ -67,6 +67,22 @@ function showTopFlavors(jsonObj) {
             listItem.textContent=ingredients[j];
             ul.appendChild(listItem);
         }
+
+        //switch case changes the background color depending on type, light purple for ice cream, light green for sorbet, light blue for frozen yogurt
+        switch (topFlavors[i].type) {
+            case 'ice cream':
+                article.style.backgroundColor = '#f7edfe';
+                break;
+            case 'sorbet':
+                article.style.backgroundColor = '#eafff0';
+                break;
+            case 'frozen yogurt':
+                article.style.backgroundColor = '#eaf0ff';
+            default:
+                article.style.backgroundColor = '#ffffff';
+        }
+
+
             // add the ingredient to the UL
 
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element

@@ -39,11 +39,11 @@
     },
     {
       "name" : "Vanilla Chocolate Cloud",
-      "calories" : 590,
-      "type" : "ice cream",
+      "calories" : 410,
+      "type" : "frozen yogurt",
       "ingredients" : [
         "vanilla extract",
-        "milk chocolate chunks",
+        "chocolate chunks",
         "honey"
       ],
       "image" : "ice-cream-xtra2.svg"
