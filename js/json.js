@@ -49,10 +49,16 @@ function showTopFlavors(jsonObj) {
         let h2 = document.createElement('h2');
         let image = document.createElement('img');
         let ul = document.createElement('ul');
+        //Added calories and dessert type
+        let calorie = document.createElement('p');
+        let dessertType = document.createElement('p');
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         h2.textContent = topFlavors[i]['name'];
         image.setAttribute('src','./images/' + topFlavors[i].image);
+        //setting textContent for calories and dessert type
+        calorie.textContent = 'Calories: ' + topFlavors[i].calories;
+        dessertType.textContent = 'Type: ' + topFlavors[i].type;
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
         let ingredients =topFlavors[i]['ingredients'];
@@ -66,6 +72,9 @@ function showTopFlavors(jsonObj) {
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element
         article.appendChild(h2);
         article.appendChild(image);
+        //appended calories and dessert type
+        article.appendChild(calorie);
+        article.appendChild(dessertType);
         article.appendChild(ul);
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
         section.appendChild(article);
