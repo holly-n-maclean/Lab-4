@@ -25,6 +25,28 @@
         "clover honey"
       ],
       "image" : "peach-mango.svg"
+    },
+    {
+      "name" : "Strawberry Princess Party",
+      "calories" : 500,
+      "type" : "ice cream",
+      "ingredients" : [
+        "strawberry purée",
+        "chocolate sauce",
+        "sprinkles"
+      ],
+      "image" : "strawberry-sprinkle.svg"
+    },
+    {
+      "name" : "Vanilla Chocolate Cloud",
+      "calories" : 590,
+      "type" : "ice cream",
+      "ingredients" : [
+        "vanilla extract",
+        "milk chocolate chunks",
+        "honey"
+      ],
+      "image" : "ice-cream-xtra2.svg"
     }
   ]
 }
