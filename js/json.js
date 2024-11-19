@@ -1,3 +1,8 @@
+// Only outside source used was https://htmlcolorcodes.com/ for colors.
+// Everything else followed current and previous lessons.
+
+
+
 /* STEP 2: Reference the HEADER and the SECTION elements with variables */
 const header = document.querySelector('header');
 const section = document.querySelector('section');
@@ -77,11 +82,20 @@ function showTopFlavors(jsonObj) {
                 article.style.backgroundColor = '#eafff0';
                 break;
             case 'frozen yogurt':
-                article.style.backgroundColor = '#eaf0ff';
+                article.style.backgroundColor = '#e9ecff';
+                break;
             default:
                 article.style.backgroundColor = '#ffffff';
         }
 
+        //if-else statement to change the background color of calories depending on the calorie count
+        if (topFlavors[i].calories <= 350) {
+            calorie.style.backgroundColor = '#caf3ba'; 
+        } else if (topFlavors[i].calories > 350 && topFlavors[i].calories <= 450) {
+            calorie.style.backgroundColor = '#fce19d'; 
+        } else if (topFlavors[i].calories > 450) {
+            calorie.style.backgroundColor = '#fab1b7';
+        } 
 
             // add the ingredient to the UL
 
